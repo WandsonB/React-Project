@@ -15,7 +15,7 @@ const Login = () => {
 
   return (
     <div className='container'>
-      <form action="">
+      <form onSubmit={handleSubmit}>
         <h1>Acesse o sistema</h1>
         <div>
             <input type="email" placeholder='E-mail'/>
