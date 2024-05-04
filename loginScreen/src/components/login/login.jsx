@@ -11,6 +11,9 @@ const Login = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault()
+
+        console.log("teste", userName, password)
+
         console.log("Envio")
     }
 
@@ -19,12 +22,12 @@ const Login = () => {
       <form onSubmit={handleSubmit}>
         <h1>Acesse o sistema</h1>
         <div>
-            <input type="email" placeholder='E-mail'/>
+            <input type="email" placeholder='E-mail' onChange={(ev) => setUserName(ev.target.value)}/>
             <FaUser className="icon"/>
         </div>
 
         <div>
-            <input type="password" placeholder='Senha'/>
+            <input type="password" placeholder='Senha' onChange={(ev) => setPassword(ev.target.value)}/>
             <FaLock className="icon"/>
         </div>
 
