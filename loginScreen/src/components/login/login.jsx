@@ -9,7 +9,8 @@ const Login = () => {
     const [userName, setUserName] = useState("")
     const [password, setPassword] = useState("")
 
-    const handleSubmit = () => {
+    const handleSubmit = (event) => {
+        event.preventDefault()
         console.log("Envio")
     }
 
