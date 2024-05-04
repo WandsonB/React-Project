@@ -1,14 +1,23 @@
-import React from 'react'
+import {FaUser,FaLock} from "react-icons/fa";
 
-const login = () => {
+const Login = () => {
   return (
     <div className='container'>
       <form action="">
         <h1>Acesse o sistema</h1>
-        <input type="email" placeholder='E-mail'/>
+        <div>
+            <input type="email" placeholder='E-mail'/>
+            <FaUser className="icon"/>
+        </div>
+        <div>
+            <input type="password" placeholder='Senha'/>
+            <FaLock className="icon"/>
+
+        </div>
+        <button>Entrar</button>
       </form>
     </div>
   )
 }
 
-export default login
+export default Login
