@@ -1,6 +1,18 @@
 import {FaUser,FaLock} from "react-icons/fa";
 
+import { useState } from "react";
+
+import "./login.css";
+
 const Login = () => {
+
+    const [userName, setUserName] = useState("")
+    const [password, setPassword] = useState("")
+
+
+
+
+
   return (
     <div className='container'>
       <form action="">
